@@ -1,10 +1,23 @@
 #pragma once
 
 #include <sys/time.h>
+#include <cstdint>
+// #include <ctime>
 #include <pthread.h>
-
 #include <memory>
 
+
+// Get the current time from the standard library
+// inline timespec gettimeoffset ( long milliseconds )
+// {
+//     std::timespec ts;
+//     std::timespec_get(&ts, TIME_UTC);
+
+//     ts.tv_sec = ts.tv_sec + ( milliseconds / 1000L );
+//     ts.tv_nsec = ts.tv_nsec + ( milliseconds % 1000L ) * 1000000L;
+
+//     return ts;
+// }
 
 inline timespec gettimeoffset ( long milliseconds )
 {

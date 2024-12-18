@@ -1,4 +1,7 @@
-#pragma once
+#ifndef BLOCKINGQUEUE_HPP
+#define BLOCKINGQUEUE_HPP
+
+//#pragma once
 
 #include "Thread.hpp"
 
@@ -287,3 +290,5 @@ private:
 
     mutable CondVar _cond;
 };
+
+#endif // BLOCKINGQUEUE_HPP
